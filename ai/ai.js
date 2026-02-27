@@ -1,0 +1,1 @@
+import { pipeline } from "@xenova/transformers"; let generator=null; export async function initAI(){ if(!generator){ generator=await pipeline("text-generation","Xenova/gpt2"); } } export async function generateBlockCode(prompt){ await initAI(); const result=await generator(prompt,{max_length:50}); return result[0].generated_text; }

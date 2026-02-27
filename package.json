@@ -1,0 +1,1 @@
+{ "name":"scratch-ai-addon","version":"1.0.0","description":"Scratch Addon with Hugging Face Transformers.js","main":"background.js","type":"module","dependencies":{"@xenova/transformers":"^2.6.0"} }

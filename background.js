@@ -1,0 +1,1 @@
+import { generateBlockCode } from "./ai/ai.js"; chrome.runtime.onMessage.addListener(async (message,sender,sendResponse)=>{ if(message.type==="AI_BLOCK_REQUEST"){ const code=await generateBlockCode(message.prompt); sendResponse({blockCode:code}); } });

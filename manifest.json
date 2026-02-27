@@ -1,0 +1,1 @@
+{ "name":"Scratch AI Addon","description":"Addon that generates Scratch blocks from AI prompts","version":"1.0","manifest_version":3,"background":{"service_worker":"background.js"},"content_scripts":[{"matches":["https://scratch.mit.edu/*"],"js":["content.js","scratch-blocks.js"]}],"default_locale":"en","permissions":["storage","activeTab","scripting"] }
